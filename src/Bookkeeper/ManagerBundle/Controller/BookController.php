@@ -54,7 +54,7 @@ class BookController extends Controller {
 
         if($form->isValid()){
             $em = $this->getDoctrine()->getManager();
-            $em->presist($book);
+            $em->persist($book);
             $em->flush();
 
             $this->get('session')->getFlashBag()->add('msg', 'Your book has been created!');
