@@ -1,0 +1,4 @@
+bookkeeper_hello_world:
+    resource: "@BookkeeperHelloWorldBundle/Resources/config/routing.yml"
+    prefix:   /
+
