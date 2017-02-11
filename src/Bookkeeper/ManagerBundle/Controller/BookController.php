@@ -24,6 +24,7 @@ class BookController extends Controller {
     }
 
     public function newAction(){
+
         $book = new Book();
 
         $form = $this->createForm(new BookType(), $book, array(
