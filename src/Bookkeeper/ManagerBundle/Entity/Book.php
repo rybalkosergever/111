@@ -44,8 +44,90 @@ class Book {
      *
      * @Assert\NotBlank()
      * @Assert\Type(type="integer")
-     * @Assert\GreaterThen(value=0)
+     * @Assert\GreaterThan(value=0)
      * */
     protected $pages;
 
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return Book
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Book
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * Set pages
+     *
+     * @param integer $pages
+     *
+     * @return Book
+     */
+    public function setPages($pages)
+    {
+        $this->pages = $pages;
+
+        return $this;
+    }
+
+    /**
+     * Get pages
+     *
+     * @return integer
+     */
+    public function getPages()
+    {
+        return $this->pages;
+    }
 }
