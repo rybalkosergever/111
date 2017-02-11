@@ -1,32 +1,32 @@
 book:
     path: /
-    default: { _controller: "BoookkeeperManagerBundle:Book:index" }
+    defaults: { _controller: "BoookkeeperManagerBundle:Book:index" }
 
 book_show:
     path: /show/{id}
-    default: { _controller: "BoookkeeperManagerBundle:Book:show" }
+    defaults: { _controller: "BoookkeeperManagerBundle:Book:show" }
 
 book_new:
     path: /new
-    default: { _controller: "BoookkeeperManagerBundle:Book:new" }
+    defaults: { _controller: "BoookkeeperManagerBundle:Book:new" }
 
 book_create:
     path: /create
-    default: { _controller: "BoookkeeperManagerBundle:Book:create" }
+    defaults: { _controller: "BoookkeeperManagerBundle:Book:create" }
     requirements: { _method: post }
 
 book_edit:
     path: /edit/{id}
-    default: { _controller: "BoookkeeperManagerBundle:Book:edit" }
+    defaults: { _controller: "BoookkeeperManagerBundle:Book:edit" }
 
 book_update:
     path: /update/{id}
-    default: { _controller: "BoookkeeperManagerBundle:Book:create" }
+    defaults: { _controller: "BoookkeeperManagerBundle:Book:create" }
     requirements: { _method: post|put }
 
 book_delete:
     path: /delete/{id}
-    default: { _controller: "BoookkeeperManagerBundle:Book:delete" }
+    defaults: { _controller: "BoookkeeperManagerBundle:Book:delete" }
     requirements: { _method: post|delete }
 
 
