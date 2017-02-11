@@ -40,7 +40,6 @@ class BookController extends Controller {
     }
 
     public function createAction(Request $request){
-
         $book = new Book();
 
         $form = $this->createForm(new BookType(), $book, array(
