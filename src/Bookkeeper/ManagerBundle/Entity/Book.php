@@ -130,5 +130,5 @@ class Book {
     {
         return $this->pages;
     }
-    
+
 }
