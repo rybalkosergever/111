@@ -21,7 +21,7 @@ book_edit:
 
 book_update:
     path: /update/{id}
-    defaults: { _controller: "BookkeeperManagerBundle:Book:create" }
+    defaults: { _controller: "BookkeeperManagerBundle:Book:update" }
     requirements: { _method: post|put }
 
 book_delete:
