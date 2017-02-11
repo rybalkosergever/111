@@ -28,10 +28,10 @@ class BookController extends Controller {
 
         $form = $this->createForm(new BookType(), $book, array(
             'action' => $this->generateUrl('book_create'),
-            'method' => $_POST
+            'method' => 'POST'
         ));
 
-        $form->add('submit', 'submit', array('label' > 'Create Book'));
+        $form->add('submit', 'submit', array('label' => 'Create Book'));
 
         return $this->render('BookkeeperManagerBundle:Book:new.html.twig', array(
             'form' => $form->createView()
